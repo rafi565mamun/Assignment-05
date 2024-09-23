@@ -14,12 +14,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
     <title>Assignment-05</title>
+
+    <style>
+        
+        .sticky-header {
+          position: sticky;
+          top: 0;
+          backdrop-filter: blur(90px);
+          transition: backdrop-filter 0.3s ease;
+        }
+    
+        .sticky-header.sticky-active {
+          backdrop-filter: blur(90px);
+        }
+      </style>
+
+
+
 </head>
 <body>
 
    <main >
     <!-- header part -->
-   <header class=" mb-20 ">
+   <header class=" mb-20 sticky-header sticky-active">
    
     <div class="bg-[#F9F7F3] h-44 lg:h-36">
         <div class="w-11/12 mx-auto h-28 flex flex-col md:flex-row justify-between items-center">
@@ -44,20 +61,22 @@
       
         </div>
       </div>
-      
-</header>
 
-<!-- first section -01  btn - (DONATION AND HISTORY)-->
+      <!-- first section -01  btn - (DONATION AND HISTORY)-->
 
-<section class="mb-10  w-11/12 mx-auto">
+<section class="mt-10 ">
     <div class="flex justify-center gap-3 ">
  
         <button class="btn font-bold rounded-md px-8 bg-[#B4F461]">Donation</button>
         <button class="border-2 font-bold rounded-md  px-8 text-gray-500">History</button>
-    
-         </div>
         
+         </div>
+         <div class="divider"></div>
 </section>
+
+      
+   </header>
+
 
 
 <!--  section -02 -->
