@@ -59,7 +59,7 @@ function handleDonation(donateAmountInputId, donationAmountId, donateBtnId, loca
         <p>Time: ${transactionTime}</p>
       `;
 
-      // Append the new history div to the history list
+     
       historyList.appendChild(historyDiv);
 
       // Show the confirmation modal
@@ -72,12 +72,12 @@ function handleDonation(donateAmountInputId, donationAmountId, donateBtnId, loca
   });
 }
 
-// Call the handleDonation function for each donation button
+// Call the handleDonation function
 handleDonation("write-noakhali-donation-amount", "noakhali-donation-amount", "noakhali-donate-now-btn", "Noakhali", "famine-2024");
 handleDonation("write-feni-donation-amount", "feni-donation-amount", "feni-donate-now-btn", "Feni", "flood-2024");
 handleDonation("write-quota-donation-amount", "quota-donation-amount", "quota-donate-now-btn", "Quota Movement", "Aid for Injured");
 
-// Functionality to show the history when the history button is clicked
+// Functionality to show the history 
 document.getElementById("history-btn").addEventListener("click", function () {
     // Hide the 'all-card' section
     document.getElementById("all-card").style.display = "none";
@@ -86,7 +86,7 @@ document.getElementById("history-btn").addEventListener("click", function () {
     document.querySelector(".collapse").style.display = "block";
 });
 
-// Functionality to show the donation cards when the donation button is clicked
+// Functionality to show the donation 
 document.getElementById("donation-btn").addEventListener("click", function () {
     // Show the 'all-card' section
     document.getElementById("all-card").style.display = "block";
