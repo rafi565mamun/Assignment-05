@@ -27,6 +27,15 @@
         .sticky-header.sticky-active {
           backdrop-filter: blur(90px);
         }
+
+        .hidden {
+          display: none;
+           }
+
+        #confirmationModal {
+          z-index: 1000;
+        }  
+
       </style>
 
 
@@ -94,7 +103,7 @@
              <!-- Donation Info -->
              <div class="bg-gray-200 w-32 p-2 rounded-md gap-1 flex text-sm mb-2">
                  <img class="w-5 h-5" src="assets/coin.png" alt="Coin Icon">
-                 <h2 id="noakhali-donation-amount">022</h2>
+                 <h2 id="noakhali-donation-amount">00</h2>
                  <h2>BDT</h2>
              </div> 
              
@@ -186,6 +195,17 @@
   </section>
  
  
+ <!-- Confirmation Modal -->
+<div id="confirmationModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+    <div class="bg-white p-8 rounded-lg text-center w-80">
+        <h2 class="text-2xl font-bold">Congrats!</h2>
+        <img class="mx-auto my-4" src="assets/coin.png" alt="Coin Icon" />
+        <p class="text-lg">You Have Donated for Humankind</p>
+        <p class="font-bold text-xl my-2">Successfully</p>
+        <button id="closeModal" class="bg-gray-300 px-4 py-2 mt-4 rounded">Close confirmation</button>
+    </div>
+</div>
+>
  
  
  
